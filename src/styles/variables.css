@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #ff0004;
+  --color-primary-dark: #cc0003;
+  --color-primary-light: #ff3336;
+  --color-cream: #f7efe2;
+  --color-background: #fffdfc;
+  --color-surface: #ffffff;
+  --color-text: #211a18;
+  --color-muted: #756b67;
+  --color-gold: #f5b72e;
+  --color-whatsapp: #25d366;
+  --color-border: #e8ddd5;
+  --color-danger: #c62828;
+  --radius: 20px;
+  --shadow: 0 12px 35px #4425150b;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-synthesis: none;
+}

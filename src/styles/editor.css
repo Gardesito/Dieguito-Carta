@@ -1,0 +1,125 @@
+.editable-region {
+  position: relative;
+  outline: 2px dashed var(--color-gold);
+  outline-offset: -3px;
+  min-height: 55px;
+}
+.edit-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: var(--color-primary);
+  border: 1px dashed var(--color-primary);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 12px;
+  min-height: 44px;
+}
+.editor-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 22px;
+  align-items: start;
+}
+.preview-stage {
+  height: 760px;
+  background: #e6e1da;
+  border-radius: 16px;
+  padding: 12px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 20px;
+}
+.preview-stage iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 8px;
+}
+.preview-stage.mobile iframe {
+  width: 375px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.editor-panel {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 20px;
+}
+.editor-panel fieldset,
+fieldset.admin-panel {
+  min-width: 0;
+}
+.editor-panel fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.editor-panel .btn {
+  font-size: 11px;
+  padding: 12px;
+}
+.editor-panel .field {
+  font-size: 11px;
+}
+.editor-panel .image-uploader {
+  margin-top: 18px;
+}
+.hours-editor {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.hours-editor .field {
+  flex: 1;
+  min-width: 0;
+}
+.hours-editor .check {
+  font-size: 10px;
+  white-space: nowrap;
+}
+@media (max-width: 1250px) {
+  .editor-layout {
+    grid-template-columns: 1fr;
+  }
+  .preview-stage {
+    position: static;
+    height: 620px;
+  }
+  .editor-panel {
+    max-width: 700px;
+    width: 100%;
+  }
+  .preview-stage:not(.mobile) iframe {
+    min-width: 1024px;
+  }
+  .preview-stage:not(.mobile) {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .preview-stage {
+    height: 590px;
+    padding: 5px;
+  }
+  .editor-panel {
+    padding: 16px;
+  }
+}
+
+.preview-stage:not(.mobile) iframe {
+  width: 1024px;
+  min-width: 1024px;
+}
+.preview-stage:not(.mobile) {
+  justify-content: flex-start;
+}
