@@ -1,3 +1,4 @@
+import { tr } from '../../../i18n'
 import { Link } from 'react-router-dom'
 import { preserveTable } from '../../../utils/navigation'
 export default function Footer() {
@@ -7,10 +8,10 @@ export default function Footer() {
         <a href={preserveTable('/#inicio')} className="footer-brand">
           Dieguito
         </a>
-        <span>Hecho con sabor, en el fin del mundo.</span>
+        <span>{tr('Hecho con sabor, en el fin del mundo.')}</span>
         <small>© {new Date().getFullYear()} Dieguito Ushuaia</small>
-        <Link to="/login">Administración</Link>
-        <a href="/creditos.html">Créditos de fotografías</a>
+        <Link to="/login">{tr('Administración')}</Link>
+        <a href="/creditos.html">{tr('Créditos de fotografías')}</a>
       </div>
     </footer>
   )

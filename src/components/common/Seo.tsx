@@ -1,9 +1,12 @@
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { localized } from '../../i18n'
 import { useLocation } from 'react-router-dom'
 import { useCatalog } from '../../hooks/useCatalog'
 import { normalizePhone } from '../../utils/whatsapp'
 import { safeUrl } from '../../utils/image'
 export default function Seo() {
+  const { i18n } = useTranslation()
   const {
     data: { settings, content },
   } = useCatalog()
@@ -12,7 +15,7 @@ export default function Seo() {
     const privatePage = pathname.startsWith('/admin') || pathname === '/login'
     document.title = privatePage
       ? 'Administración | Dieguito'
-      : 'Dieguito Ushuaia | Pizzas a la piedra, parrilla y comidas caseras'
+      : `Dieguito Ushuaia | ${localized(content.find((c) => c.content_key === 'hero') || { title: 'Dieguito', translations: {} }).title}`
     let robots = document.querySelector<HTMLMetaElement>('meta[name="robots"]')
     if (!robots) {
       robots = document.createElement('meta')
@@ -73,6 +76,6 @@ export default function Seo() {
     return () => {
       structured?.remove()
     }
-  }, [settings, content, pathname])
+  }, [settings, content, pathname, i18n.resolvedLanguage])
   return null
 }

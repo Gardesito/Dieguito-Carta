@@ -4,6 +4,8 @@ Fecha: 15 de septiembre de 2026. Fuente: texto completo proporcionado por el usu
 
 ## Resultado
 
+Actualización de portada e idiomas: se mantienen los 184 artículos. Por el pedido posterior, Muzzarella, Dieguito Casera con Fritas y Carne (Empanadas) ahora comienzan destacados. Se incorporaron traducciones opcionales, conservando el español y los precios originales. Ver `docs/HOME_I18N.md` para la migración 003, la nueva portada y los resultados de las pruebas actualizadas.
+
 **184 artículos en 14 categorías, más 9 adicionales de salsa.** Las salsas están relacionadas con las 10 pastas mediante 90 variantes; no cuentan como productos independientes.
 
 | Categoría | Artículos |

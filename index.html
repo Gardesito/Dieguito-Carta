@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-AR">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,56 @@
     />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <section
+        style="
+          max-width: 1280px;
+          margin: 24px auto;
+          padding: 36px;
+          background: #171716;
+          color: #fff6e9;
+          border-radius: 24px;
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          align-items: center;
+        "
+      >
+        <div style="flex: 1 1 280px">
+          <p>DIEGUITO · USHUAIA</p>
+          <h1 style="font-size: 42px">Pizzas a la piedra</h1>
+          <p>
+            Sabores irresistibles, ingredientes seleccionados y ese toque casero que nos
+            caracteriza.
+          </p>
+          <a
+            style="
+              display: inline-block;
+              background: #ff0004;
+              color: white;
+              padding: 16px;
+              border-radius: 12px;
+            "
+            href="#menu-pizzas"
+            >Ver pizzas</a
+          >
+        </div>
+        <img
+          src="/images/hero/pizza.png"
+          alt="Pizza artesanal a la piedra"
+          style="width: 100%; max-width: 620px; border-radius: 20px"
+        />
+      </section>
+      <section
+        id="menu-pizzas"
+        style="max-width: 1280px; margin: auto; padding: 24px; font-family: Arial, sans-serif"
+      >
+        <h2>Pizzas</h2>
+        <p>Muzzarella · Chica $12.000 · Grande $19.000</p>
+        <noscript>Para buscar en la carta completa, activá JavaScript.</noscript>
+      </section>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

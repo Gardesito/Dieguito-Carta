@@ -1,3 +1,4 @@
+import TranslationFields from '../../components/admin/TranslationFields'
 import { useState } from 'react'
 import { toast } from 'sonner'
 import { Link } from 'react-router-dom'
@@ -70,6 +71,14 @@ export default function SettingsPage() {
         }}
       >
         <fieldset disabled={busy} className="admin-panel">
+          <TranslationFields
+            value={current.translations}
+            onChange={(v) => update('translations', v)}
+            fields={[
+              ['address', 'Dirección'],
+              ['logo_alt', 'Texto alternativo del logo'],
+            ]}
+          />
           <div className="form-columns">
             <div>
               <h2>Información general</h2>
@@ -109,6 +118,18 @@ export default function SettingsPage() {
               <h2>Horarios</h2>
               {current.opening_hours.map((h, i) => (
                 <div className="hours-editor" key={h.day}>
+                  <TranslationFields
+                    value={h.translations}
+                    onChange={(v) =>
+                      update(
+                        'opening_hours',
+                        current.opening_hours.map((item, j) =>
+                          i === j ? { ...item, translations: v } : item,
+                        ),
+                      )
+                    }
+                    fields={[['hours', `Horario de ${h.day}`]]}
+                  />
                   <label className="field">
                     {h.day}
                     <input

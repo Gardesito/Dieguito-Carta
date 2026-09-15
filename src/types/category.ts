@@ -1,4 +1,5 @@
 export interface Category {
+  translations?: import('../i18n').Translations
   id: string
   name: string
   slug: string

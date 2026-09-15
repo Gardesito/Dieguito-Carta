@@ -1,4 +1,5 @@
 import { writeFileSync, readFileSync } from 'node:fs'
+import { categoryTranslations, productTranslations, featuredSlugs } from './menu-translations.mjs'
 import { createHash } from 'node:crypto'
 const slug = (s) =>
   s
@@ -319,12 +320,33 @@ const products = sections.flatMap(([category, note, lines], i) =>
     }
   }),
 )
+categories.forEach((c, i) => {
+  c.translations = categoryTranslations(c, i)
+})
+products.forEach((p) => {
+  p.translations = productTranslations(p)
+  p.is_featured = featuredSlugs.includes(p.slug)
+  const category = categories.find((c) => c.id === p.category_id)
+  const base =
+    { pizzas: 0, 'hamburguesas-caseras': 100, empanadas: 200 }[category.slug] ??
+    1000 + category.sort_order * 100
+  p.sort_order += base
+  p.product_variants.forEach((v) => {
+    v.translations = {}
+  })
+})
 writeFileSync(
   'src/data/menuData.ts',
   `// Carta transcripta del texto proporcionado. Regenerar con node scripts/generate-menu.mjs.\nimport type { Category } from '../types/category'\nimport type { Product } from '../types/product'\nexport const menuCategories: Category[] = ${JSON.stringify(categories, null, 2)}\nexport const menuProducts: Product[] = ${JSON.stringify(products, null, 2)}\n`,
 )
 const sqlValue = (v) =>
-  v === null ? 'null' : typeof v === 'string' ? `'${v.replaceAll("'", "''")}'` : String(v)
+  typeof v === 'object' && v !== null
+    ? `'${JSON.stringify(v).replaceAll("'", "''")}'::jsonb`
+    : v === null
+      ? 'null'
+      : typeof v === 'string'
+        ? `'${v.replaceAll("'", "''")}'`
+        : String(v)
 const cleanup = `-- Retirar únicamente registros identificados del seed de demostración anterior.\ndelete from public.promotions where id='20000000-0000-4000-8000-000000000001' and title='Hoy se comparte';\ndelete from public.products where id::text like '10000000-0000-4000-8000-%' and slug in ('muzzarella','hamburguesa-dieguito','empanada-de-carne','rabas','promo-19');\ndelete from public.categories c where id::text like '00000000-0000-4000-8000-%' and slug in ('promos','entradas','milanesas-del-bodegon','calzones','menu-del-dia') and not exists(select 1 from public.products p where p.category_id=c.id);\n`
 let sql =
   '-- Carta completa. Ejecutar después de las migraciones. Reejecutar restaura los valores de la carta; conserva fotos existentes.\nbegin;\n' +

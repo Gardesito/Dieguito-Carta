@@ -25,7 +25,7 @@ export const fallbackCatalog: Catalog = {
   content: demoContent,
   settings: demoSettings,
 }
-const cacheKey = `dieguito:public:menu-v2:${import.meta.env.VITE_SUPABASE_URL || 'demo'}`
+const cacheKey = `dieguito:public:home-v3:${import.meta.env.VITE_SUPABASE_URL || 'demo'}`
 export function readCache(): Catalog | null {
   try {
     const cached = JSON.parse(localStorage.getItem(cacheKey) || 'null')

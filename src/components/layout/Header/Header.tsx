@@ -1,3 +1,5 @@
+import LanguageSelector from '../../common/LanguageSelector'
+import { tr } from '../../../i18n'
 import { useEffect, useState } from 'react'
 import { Menu, X, MessageCircle } from 'lucide-react'
 import type { SiteSettings } from '../../../types/siteContent'
@@ -33,13 +35,16 @@ export default function Header({
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <a className="skip-link" href="#menu">
-        Saltar al menú
+        {tr('Saltar al menú')}
       </a>
+      <div className="container language-bar">
+        <LanguageSelector />
+      </div>
       <div className="container header-inner">
         <a
           className="brand"
           href={preserveTable('/#inicio')}
-          aria-label={`${settings.business_name}, inicio`}
+          aria-label={`${settings.business_name}, ${tr('Inicio')}`}
         >
           {settings.logo_url ? (
             <img
@@ -51,7 +56,7 @@ export default function Header({
           ) : (
             <>
               <strong>{settings.business_name}</strong>
-              <span>PIZZERÍA & RESTAURANTE</span>
+              <span>{tr('PIZZERÍA & RESTAURANTE')}</span>
             </>
           )}
         </a>
@@ -60,10 +65,10 @@ export default function Header({
             <SearchBar value={search} onChange={onSearchChange} />
           </div>
         )}
-        <nav className="desktop-nav" aria-label="Navegación principal">
+        <nav className="desktop-nav" aria-label={tr('Navegación principal')}>
           {navigation.map(([name, id]) => (
             <a key={id} href={preserveTable(`/#${id}`)}>
-              {name}
+              {tr(name)}
             </a>
           ))}
         </nav>
@@ -71,15 +76,15 @@ export default function Header({
           <button
             className="btn whatsapp header-whatsapp"
             onClick={() => openWhatsApp(settings.whatsapp_number)}
-            aria-label="Pedir por WhatsApp"
+            aria-label={tr('Pedir por WhatsApp')}
           >
             <MessageCircle size={19} />
-            <span>Pedir por WhatsApp</span>
+            <span>{tr('Pedir por WhatsApp')}</span>
           </button>
           <button
             className="icon-btn hamburger"
             onClick={() => setOpen(!open)}
-            aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+            aria-label={open ? tr('Cerrar menú') : tr('Abrir menú')}
             aria-expanded={open}
             aria-controls="mobile-menu"
           >

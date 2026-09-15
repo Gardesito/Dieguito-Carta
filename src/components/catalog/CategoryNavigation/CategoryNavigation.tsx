@@ -1,3 +1,4 @@
+import { tr } from '../../../i18n'
 import {
   Beef,
   Beer,
@@ -31,14 +32,14 @@ export default function CategoryNavigation({
   onChange: (id: string) => void
 }) {
   return (
-    <div className="category-nav" aria-label="Categorías">
+    <div className="category-nav" aria-label={tr('Categorías')}>
       <button
         className={`category ${!value ? 'active' : ''}`}
         aria-pressed={!value}
         onClick={() => onChange('')}
       >
         <Grid2X2 />
-        <span>Todos</span>
+        <span>{tr('Todos')}</span>
       </button>
       {categories
         .filter((c) => c.is_active)
@@ -52,7 +53,7 @@ export default function CategoryNavigation({
             {c.image_url ? (
               <img src={imageSrc(c.image_url)} width={30} height={30} alt={c.image_alt} />
             ) : (
-              <CategoryIcon name={c.name} />
+              <CategoryIcon name={c.slug} />
             )}
             <span>{c.name}</span>
           </button>

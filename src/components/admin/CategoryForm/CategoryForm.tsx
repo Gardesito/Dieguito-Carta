@@ -1,3 +1,4 @@
+import TranslationFields from '../TranslationFields'
 import { useState } from 'react'
 import { toast } from 'sonner'
 import type { Category } from '../../../types/category'
@@ -42,7 +43,7 @@ export default function CategoryForm({
                 categoriesService.save({
                   ...value,
                   name: value.name.trim(),
-                  slug: slugify(value.name),
+                  slug: category.name ? category.slug : slugify(value.name),
                   image_url: url,
                 }),
             )
@@ -58,6 +59,15 @@ export default function CategoryForm({
         }}
       >
         <div className="modal-body">
+          <TranslationFields
+            value={value.translations}
+            onChange={(v) => update('translations', v)}
+            fields={[
+              ['name', 'Nombre'],
+              ['description', 'Descripción'],
+              ['image_alt', 'Texto alternativo'],
+            ]}
+          />
           <h2 id="category-form-title">{category.name ? 'Editar categoría' : 'Nueva categoría'}</h2>
           <label className="field">
             Nombre

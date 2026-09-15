@@ -1,4 +1,5 @@
 export interface ProductVariant {
+  translations?: import('../i18n').Translations
   id: string
   product_id: string
   name: string
@@ -8,6 +9,7 @@ export interface ProductVariant {
   is_addon?: boolean
 }
 export interface Product {
+  translations?: import('../i18n').Translations
   id: string
   category_id: string
   name: string

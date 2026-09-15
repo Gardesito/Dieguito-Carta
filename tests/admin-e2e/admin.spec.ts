@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test'
 import { menuCategories, menuProducts } from '../../src/data/menuData'
+import { homeContent } from '../../src/data/homeData'
 const uid = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'
 const cid = '00000000-0000-4000-8000-000000000001'
 const base = 'https://dieguito-test.supabase.co'
@@ -153,6 +154,50 @@ async function login(page: Page) {
   await expect(page).toHaveURL(/\/admin\/productos$/)
   await expect(page.getByRole('heading', { name: 'Productos', exact: true })).toBeVisible()
 }
+test('edita traducciones, slides y banner desde el administrador', async ({ page }) => {
+  const { tables } = await fixture(page)
+  tables.categories = structuredClone(menuCategories)
+  tables.products = structuredClone(menuProducts)
+  tables.site_content = [
+    ...structuredClone(homeContent),
+    ...tables.site_content.filter((c) => c.content_key === 'about'),
+  ]
+  await login(page)
+  await page.getByRole('textbox', { name: 'Buscar producto', exact: true }).fill('Muzzarella')
+  await page.getByRole('button', { name: 'Editar Muzzarella', exact: true }).click()
+  const dialog = page.getByRole('dialog')
+  await dialog.getByRole('tab', { name: 'English', exact: true }).click()
+  await dialog.getByLabel('Nombre (EN)', { exact: true }).fill('Stone-baked mozzarella')
+  await dialog.getByRole('button', { name: 'Guardar cambios' }).click()
+  await expect(dialog).toHaveCount(0)
+  expect(
+    (
+      tables.products.find((p) => p.slug === 'pizzas-muzzarella')?.translations as Record<
+        string,
+        Record<string, string>
+      >
+    ).en.name,
+  ).toBe('Stone-baked mozzarella')
+  await page.getByRole('link', { name: 'Editar página', exact: true }).click()
+  await page.getByLabel('Sección', { exact: true }).selectOption('hero-grill')
+  await page.getByLabel('Título', { exact: true }).fill('Parrilla de prueba')
+  await page.getByRole('tab', { name: 'Português', exact: true }).click()
+  await page.getByLabel('Título (PT)', { exact: true }).fill('Churrasco de teste')
+  await page.getByLabel('Orden del slide').fill('4')
+  await page.getByRole('button', { name: 'Guardar sección' }).click()
+  await expect(page.getByText('Sección publicada')).toBeVisible()
+  expect(tables.site_content.find((c) => c.content_key === 'hero-grill')).toMatchObject({
+    title: 'Parrilla de prueba',
+    metadata: { category_slug: 'parrillada', sort_order: 4 },
+    translations: { pt: { title: 'Churrasco de teste' } },
+  })
+  await page.getByLabel('Sección', { exact: true }).selectOption('offer')
+  await page.getByLabel('Mostrar esta sección').uncheck()
+  await page.getByRole('button', { name: 'Guardar sección' }).click()
+  await expect
+    .poll(() => tables.site_content.find((c) => c.content_key === 'offer')?.is_visible)
+    .toBe(false)
+})
 test('administra los 184 artículos, conserva slugs y edita salsas y precios pendientes', async ({
   page,
 }) => {
@@ -304,7 +349,7 @@ test('WhatsApp genera el mensaje y el precio elegidos al abrir una pestaña', as
     },
   ]
   await page.goto('/?mesa=12')
-  await page.getByRole('button', { name: 'Ver Muzzarella, disponible' }).click()
+  await page.locator('#menu').getByRole('button', { name: 'Ver Muzzarella, disponible' }).click()
   await page.getByRole('radio', { name: /Grande/ }).check()
   await page
     .context()

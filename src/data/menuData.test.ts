@@ -1,10 +1,31 @@
 import { describe, expect, it } from 'vitest'
 import { menuCategories as categories, menuProducts as products } from './menuData'
-import { canOrder, filterProducts, priceOptions, selectedPrice } from '../utils/products'
+import {
+  canOrder,
+  filterProducts,
+  priceOptions,
+  selectedPrice,
+  featuredProducts,
+} from '../utils/products'
 import { currency } from '../utils/currency'
 import { productMessage } from '../utils/whatsapp'
 
 describe('Carta completa de Dieguito', () => {
+  it('muestra como máximo tres destacados por orden sin incluir ocultos', () => {
+    expect(featuredProducts(products, categories).map((p) => p.slug)).toEqual([
+      'pizzas-muzzarella',
+      'hamburguesas-caseras-dieguito-casera-con-fritas',
+      'empanadas-carne',
+    ])
+    const all = products
+      .slice(0, 6)
+      .map((p, i) => ({ ...p, is_featured: true, sort_order: 5 - i, is_visible: i !== 5 }))
+    expect(featuredProducts(all, categories).map((p) => p.id)).toEqual([
+      all[4].id,
+      all[3].id,
+      all[2].id,
+    ])
+  })
   it('contiene 184 artículos en las 14 categorías ordenadas, sin duplicados ni huérfanos', () => {
     expect(categories.map((c) => c.name)).toEqual([
       'Sándwiches',
@@ -30,13 +51,17 @@ describe('Carta completa de Dieguito', () => {
     expect(new Set(products.map((p) => p.id)).size).toBe(184)
     for (const p of products) {
       expect(categories.some((c) => c.id === p.category_id)).toBe(true)
-      expect(p.is_available && p.is_visible && !p.is_featured).toBe(true)
+      expect(p.is_available && p.is_visible).toBe(true)
       for (const price of [p.price, p.small_price, p.large_price])
         expect(price === null || (typeof price === 'number' && price >= 0)).toBe(true)
       expect(p.image_url).toBe('')
     }
     for (const c of categories)
-      expect(products.filter((p) => p.category_id === c.id).map((p) => p.sort_order)).toEqual(
+      expect(
+        products
+          .filter((p) => p.category_id === c.id)
+          .map((p, i, list) => p.sort_order - list[0].sort_order),
+      ).toEqual(
         Array.from({ length: products.filter((p) => p.category_id === c.id).length }, (_, i) => i),
       )
   })

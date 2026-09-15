@@ -29,6 +29,7 @@ beforeAll(async () => {
     ),
   )
   await db.exec(await readFile('supabase/migrations/002_variant_addons.sql', 'utf8'))
+  await db.exec(await readFile('supabase/migrations/003_home_i18n.sql', 'utf8'))
   await db.exec(await readFile('supabase/seed.sql', 'utf8'))
   await db.exec(
     `insert into public.profiles(id,role) values('${admin}','admin'),('${editor}','editor');`,
@@ -38,6 +39,36 @@ afterAll(async () => {
   await db?.close()
 })
 describe('Esquema y políticas RLS (PostgreSQL local)', () => {
+  it('guarda traducciones de producto y salsa con la función transaccional', async () => {
+    const original = menuProducts.find((p) => p.name === 'Ñoquis')!
+    const { product_variants, ...row } = original
+    const payload = { ...row, translations: { en: { name: 'Gnocchi' }, pt: { name: 'Nhoque' } } }
+    const variants = product_variants.map((v) => ({
+      ...v,
+      translations: { en: { name: v.name === 'Fileto' ? 'Tomato sauce' : v.name } },
+    }))
+    const q = (v: unknown) => JSON.stringify(v).replaceAll("'", "''")
+    await as(
+      'authenticated',
+      editor,
+      `select public.save_product('${q(payload)}'::jsonb,'${q(variants)}'::jsonb)`,
+    )
+    expect(
+      (
+        await db.query<{ translations: unknown }>(
+          `select translations from public.products where id='${row.id}'`,
+        )
+      ).rows[0].translations,
+    ).toEqual(payload.translations)
+    expect(
+      (
+        await db.query<{ translations: unknown }>(
+          `select translations from public.product_variants where id='${variants[0].id}'`,
+        )
+      ).rows[0].translations,
+    ).toEqual({ en: { name: 'Tomato sauce' } })
+    await db.exec(await readFile('supabase/seed-menu.sql', 'utf8'))
+  })
   it('seed-menu y seed integrado coinciden exactamente con la carta local y son repetibles', async () => {
     const verify = async () => {
       const categories = await db.query('select * from public.categories order by sort_order')

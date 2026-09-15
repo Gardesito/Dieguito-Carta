@@ -62,3 +62,15 @@ export const slugify = (s: string) =>
   normalize(s)
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
+
+export function featuredProducts(products: Product[], categories: Category[]) {
+  return products
+    .filter(
+      (p) =>
+        p.is_featured &&
+        p.is_visible &&
+        categories.some((c) => c.id === p.category_id && c.is_active),
+    )
+    .sort((a, b) => a.sort_order - b.sort_order || a.slug.localeCompare(b.slug))
+    .slice(0, 3)
+}

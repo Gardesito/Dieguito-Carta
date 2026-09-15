@@ -1,5 +1,6 @@
 import type { Promotion } from '../types/promotion'
 import type { SiteContent, SiteSettings } from '../types/siteContent'
+import { homeContent } from './homeData'
 import { siteConfig } from '../config/site'
 export const photos = {
   pizza:
@@ -16,22 +17,26 @@ export const photos = {
 export { menuCategories as demoCategories, menuProducts as demoProducts } from './menuData'
 export const demoPromotions: Promotion[] = []
 export const demoContent: SiteContent[] = [
-  {
-    id: '30000000-0000-4000-8000-000000000001',
-    content_key: 'hero',
-    title: 'El sabor de Ushuaia',
-    subtitle: 'USHUAIA · TIERRA DEL FUEGO',
-    body: 'Pizzas a la piedra, parrilla y mucho más',
-    image_url: photos.pizza,
-    image_alt: 'Pizza a la piedra recién horneada',
-    button_label: 'Ver menú',
-    button_url: '/#menu',
-    metadata: {},
-    is_visible: true,
-  },
+  ...homeContent,
   {
     id: '30000000-0000-4000-8000-000000000002',
     content_key: 'about',
+    translations: {
+      pt: {
+        title: 'Aqui sempre há lugar para mais um.',
+        subtitle: 'SUA MESA NO FIM DO MUNDO',
+        body: 'Sabores de sempre, porções para compartilhar e o aconchego de uma boa mesa. Esperamos você na Magallanes 967, no coração de Ushuaia.',
+        button_label: 'Como chegar',
+        image_alt: 'Uma mesa para compartilhar',
+      },
+      en: {
+        title: 'There is always room for one more here.',
+        subtitle: 'YOUR TABLE AT THE END OF THE WORLD',
+        body: 'Familiar flavors, portions to share and the warmth of a good table. Visit us at Magallanes 967, in the heart of Ushuaia.',
+        button_label: 'Get directions',
+        image_alt: 'A table to share',
+      },
+    },
     title: 'Acá, siempre hay lugar para uno más.',
     subtitle: 'TU MESA EN EL FIN DEL MUNDO',
     body: 'Sabores de siempre, porciones para compartir y el calor de una buena mesa. Te esperamos en Magallanes 967, en el corazón de Ushuaia.',

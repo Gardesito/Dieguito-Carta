@@ -1,3 +1,4 @@
+import { tr } from '../../../i18n'
 import { useState } from 'react'
 import { MessageCircle } from 'lucide-react'
 import type { Product } from '../../../types/product'
@@ -31,13 +32,13 @@ export default function ProductModal({
         <p className="muted">{p.description}</p>
         {p.ingredients && p.ingredients !== p.description && (
           <p>
-            <strong>Ingredientes: </strong>
+            <strong>{tr('Ingredientes: ')}</strong>
             {p.ingredients}
           </p>
         )}
         {options.length > 0 && (
           <fieldset className="variant-picker">
-            <legend>Elegí una opción para pedir</legend>
+            <legend>{tr('Elegí una opción para pedir')}</legend>
             {options.map((v) => (
               <label key={v.id} className={option === v.id ? 'selected' : ''}>
                 <input
@@ -49,11 +50,11 @@ export default function ProductModal({
                   onChange={() => setOption(v.id)}
                 />
                 <span>
-                  {v.name}
-                  {!v.available ? ' · Agotado' : ''}
+                  {tr(v.name)}
+                  {!v.available ? ` · ${tr('Agotado')}` : ''}
                 </span>
                 <strong>
-                  {v.price === null ? p.price_label || 'Consultar' : currency(v.price)}
+                  {v.price === null ? tr(p.price_label || 'Consultar') : currency(v.price)}
                 </strong>
               </label>
             ))}
@@ -61,10 +62,10 @@ export default function ProductModal({
         )}
         {addons.length > 0 && (
           <fieldset className="variant-picker">
-            <legend>Salsa (opcional)</legend>
+            <legend>{tr('Salsa (opcional)')}</legend>
             <label>
               <input type="radio" name="sauce" checked={!option} onChange={() => setOption('')} />
-              Sin adicional
+              {tr('Sin adicional')}
             </label>
             {addons.map((v) => (
               <label key={v.id} className={option === v.id ? 'selected' : ''}>
@@ -77,7 +78,7 @@ export default function ProductModal({
                 />
                 <span>
                   {v.name}
-                  {!v.is_available ? ' · Agotado' : ''}
+                  {!v.is_available ? ` · ${tr('Agotado')}` : ''}
                 </span>
                 <strong>+{currency(v.price)}</strong>
               </label>
@@ -85,19 +86,19 @@ export default function ProductModal({
           </fieldset>
         )}
         <div className="modal-price">
-          <span className="eyebrow">PRECIO</span>
+          <span className="eyebrow">{tr('PRECIO')}</span>
           <strong>
             {options.length && !option
-              ? 'Seleccioná una opción'
+              ? tr('Seleccioná una opción')
               : price === null
-                ? p.price_label || 'Consultar'
+                ? tr(p.price_label) || tr('Consultar')
                 : currency(price)}{' '}
             <small>
-              {price !== null && !p.price_label.startsWith('Consultar') ? p.price_label : ''}
+              {price !== null && !p.price_label.startsWith('Consultar') ? tr(p.price_label) : ''}
             </small>
           </strong>
         </div>
-        {!p.is_available && <p className="error">Agotado por el momento</p>}
+        {!p.is_available && <p className="error">{tr('Agotado por el momento')}</p>}
         <button
           className="btn wide"
           disabled={!canOrder(p, option)}
@@ -107,16 +108,18 @@ export default function ProductModal({
               productMessage({
                 name: p.name,
                 category,
-                option: [...options, ...addons].find((v) => v.id === option)?.name,
+                option: [...options, ...addons].find((v) => v.id === option)?.name
+                  ? tr([...options, ...addons].find((v) => v.id === option)!.name)
+                  : undefined,
                 price,
                 table: tableFromSearch(window.location.search),
               }),
             )
           }
         >
-          <MessageCircle size={19} /> Pedir en la mesa / Dudas
+          <MessageCircle size={19} /> {tr('Pedir en la mesa / Dudas')}
         </button>
-        <p className="modal-note">Te respondemos por WhatsApp. Sin carrito, sin vueltas.</p>
+        <p className="modal-note">{tr('Te respondemos por WhatsApp. Sin carrito, sin vueltas.')}</p>
       </div>
     </Modal>
   )

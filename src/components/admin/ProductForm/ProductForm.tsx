@@ -1,3 +1,4 @@
+import TranslationFields from '../TranslationFields'
 import { useEffect, useState } from 'react'
 import { useFieldArray, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -114,6 +115,20 @@ export default function ProductForm({
       <form onSubmit={submit}>
         <div className="modal-body">
           <h2 id="product-form-title">{product.name ? 'Editar producto' : 'Nuevo producto'}</h2>
+          <TranslationFields
+            value={values.translations}
+            onChange={(v) => setValue('translations', v, { shouldDirty: true })}
+            fields={[
+              ['name', 'Nombre'],
+              ['description', 'Descripción'],
+              ['ingredients', 'Ingredientes'],
+              ['image_alt', 'Texto alternativo'],
+            ]}
+          />
+          <p className="form-hint">
+            Los más elegidos muestra hasta 3 productos visibles marcados como Destacado, según
+            Orden.
+          </p>
           <div className="form-columns">
             <div>
               <label className="field">
@@ -168,6 +183,11 @@ export default function ProductForm({
                 <legend>Variantes</legend>
                 {fields.map((v, i) => (
                   <div key={v.fieldKey} className="variant-admin">
+                    <TranslationFields
+                      value={values.product_variants[i]?.translations}
+                      onChange={(v) => setValue(`product_variants.${i}.translations`, v)}
+                      fields={[['name', 'Nombre de la opción']]}
+                    />
                     <label className="field">
                       Opción
                       <input {...register(`product_variants.${i}.name`)} required />

@@ -1,3 +1,4 @@
+import { tr } from '../../../i18n'
 import { useEffect, useRef, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { X } from 'lucide-react'
@@ -51,7 +52,7 @@ export default function Modal({
         }
       }}
     >
-      <button className="icon-btn modal-close" aria-label="Cerrar ventana" onClick={onClose}>
+      <button className="icon-btn modal-close" aria-label={tr('Cerrar ventana')} onClick={onClose}>
         <X size={20} />
       </button>
       {children}

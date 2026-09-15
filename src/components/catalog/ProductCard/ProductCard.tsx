@@ -1,3 +1,4 @@
+import { tr } from '../../../i18n'
 import { ArrowUpRight, Star } from 'lucide-react'
 import type { Product } from '../../../types/product'
 import FoodImage from '../../common/FoodImage'
@@ -17,39 +18,41 @@ export default function ProductCard({
     <button
       className={`product-card ${!p.is_available ? 'sold-out' : ''}`}
       onClick={onOpen}
-      aria-label={`Ver ${p.name}, ${p.is_available ? 'disponible' : 'agotado'}`}
+      aria-label={`${tr('Ver')} ${p.name}, ${p.is_available ? tr('disponible') : tr('agotado')}`}
     >
       <div className="product-photo">
         <FoodImage src={p.image_url} alt={p.image_alt || p.name} />
         {p.is_featured && (
           <span className="featured">
-            <Star size={12} fill="currentColor" /> Favorito
+            <Star size={12} fill="currentColor" /> {tr('Favorito')}
           </span>
         )}
         <span className={`availability ${!p.is_available ? 'unavailable' : ''}`}>
-          {p.is_available ? 'Disponible' : 'Agotado'}
+          {p.is_available ? tr('Disponible') : tr('Agotado')}
         </span>
       </div>
       <div className="product-info">
         <span className="product-category">{category}</span>
         <h3>{p.name}</h3>
-        <p>{p.description}</p>
+        <p>{p.description || p.ingredients}</p>
         <div className="product-bottom">
           <div>
             {options.length ? (
               options.slice(0, 2).map((o) => (
                 <div className="price-option" key={o.id}>
-                  <small>{o.name}</small>
+                  <small>{tr(o.name)}</small>
                   <strong>
-                    {o.price === null ? p.price_label || 'Consultar' : currency(o.price)}
+                    {o.price === null ? tr(p.price_label || 'Consultar') : currency(o.price)}
                   </strong>
                 </div>
               ))
             ) : (
               <strong className="price">
-                {p.price === null ? p.price_label || 'Consultar' : currency(p.price)}{' '}
+                {p.price === null ? tr(p.price_label) || tr('Consultar') : currency(p.price)}{' '}
                 <small>
-                  {p.price !== null && !p.price_label.startsWith('Consultar') ? p.price_label : ''}
+                  {p.price !== null && !p.price_label.startsWith('Consultar')
+                    ? tr(p.price_label)
+                    : ''}
                 </small>
               </strong>
             )}

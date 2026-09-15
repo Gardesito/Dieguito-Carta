@@ -1,4 +1,7 @@
 export interface Promotion {
+  translations?: import('../i18n').Translations
+  label?: string
+  button_label?: string
   id: string
   product_id: string | null
   title: string

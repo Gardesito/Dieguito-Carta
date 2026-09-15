@@ -1,3 +1,4 @@
+import TranslationFields from '../../components/admin/TranslationFields'
 import { useEffect, useRef, useState } from 'react'
 import { Monitor, Smartphone } from 'lucide-react'
 import { toast } from 'sonner'
@@ -53,7 +54,10 @@ export default function ContentEditorPage() {
     const receive = (e: MessageEvent) => {
       if (e.origin !== location.origin || e.source !== iframe.current?.contentWindow) return
       if (e.data?.type === 'dieguito-preview-ready') setReady((version) => version + 1)
-      if (e.data?.type === 'dieguito-edit' && ['hero', 'about'].includes(e.data.key))
+      if (
+        e.data?.type === 'dieguito-edit' &&
+        ['hero', 'hero-grill', 'hero-sea', 'offer', 'about'].includes(e.data.key)
+      )
         setKey(e.data.key)
     }
     window.addEventListener('message', receive)
@@ -61,7 +65,7 @@ export default function ContentEditorPage() {
   }, [])
   useEffect(() => {
     if (!ready) return
-    const content = ['hero', 'about']
+    const content = ['hero', 'hero-grill', 'hero-sea', 'offer', 'about']
       .map(
         (k) =>
           drafts[k] ||
@@ -153,10 +157,24 @@ export default function ContentEditorPage() {
           }}
         >
           <fieldset disabled={busy}>
+            <TranslationFields
+              value={current.translations}
+              onChange={(v) => update('translations', v)}
+              fields={[
+                ['subtitle', 'Etiqueta'],
+                ['title', 'Título'],
+                ['body', 'Descripción'],
+                ['button_label', 'Texto del botón'],
+                ['image_alt', 'Texto alternativo'],
+              ]}
+            />
             <label className="field">
               Sección
               <select value={key} onChange={(e) => setKey(e.target.value)}>
-                <option value="hero">Portada</option>
+                <option value="hero">Slide 1 · Pizzas</option>
+                <option value="hero-grill">Slide 2 · Parrilla</option>
+                <option value="hero-sea">Slide 3 · Mar</option>
+                <option value="offer">Banner general de promociones</option>
                 <option value="about">Nosotros</option>
               </select>
             </label>
@@ -214,6 +232,39 @@ export default function ContentEditorPage() {
                 onChange={(e) => update('button_url', e.target.value)}
               />
             </label>
+            {key.startsWith('hero') && (
+              <>
+                <label className="field">
+                  Orden del slide
+                  <input
+                    type="number"
+                    value={current.metadata.sort_order || 0}
+                    onChange={(e) =>
+                      update('metadata', {
+                        ...current.metadata,
+                        sort_order: Number(e.target.value),
+                      })
+                    }
+                  />
+                </label>
+                <label className="field">
+                  Categoría del botón
+                  <select
+                    value={current.metadata.category_slug || ''}
+                    onChange={(e) =>
+                      update('metadata', { ...current.metadata, category_slug: e.target.value })
+                    }
+                  >
+                    <option value="">Usar enlace</option>
+                    {catalog.data.categories.map((c) => (
+                      <option key={c.id} value={c.slug}>
+                        {c.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              </>
+            )}
             {key === 'hero' && (
               <label className="field">
                 Promoción en la portada

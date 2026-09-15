@@ -1,3 +1,4 @@
+import TranslationFields from '../TranslationFields'
 import { useState } from 'react'
 import { format } from 'date-fns'
 import { toast } from 'sonner'
@@ -62,6 +63,17 @@ export default function PromotionForm({
         }}
       >
         <div className="modal-body">
+          <TranslationFields
+            value={value.translations}
+            onChange={(v) => update('translations', v)}
+            fields={[
+              ['label', 'Etiqueta'],
+              ['title', 'Título'],
+              ['description', 'Descripción'],
+              ['button_label', 'Texto del botón'],
+              ['image_alt', 'Texto alternativo'],
+            ]}
+          />
           <h2 id="promotion-form-title">
             {promotion.title ? 'Editar promoción' : 'Nueva promoción'}
           </h2>
@@ -79,6 +91,17 @@ export default function PromotionForm({
             <textarea
               value={value.description}
               onChange={(e) => update('description', e.target.value)}
+            />
+          </label>
+          <label className="field">
+            Etiqueta
+            <input value={value.label || ''} onChange={(e) => update('label', e.target.value)} />
+          </label>
+          <label className="field">
+            Texto del botón
+            <input
+              value={value.button_label || ''}
+              onChange={(e) => update('button_label', e.target.value)}
             />
           </label>
           <div className="form-columns">

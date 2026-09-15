@@ -13,6 +13,18 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 0,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Sanduíches',
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        name: 'Sandwiches',
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '2987682e-c6fc-4edc-8c3e-ca6b47afa780',
@@ -24,6 +36,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 1,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Churrasco',
+        description: '',
+      },
+      en: {
+        name: 'Grill',
+        description: '',
+      },
+    },
   },
   {
     id: '1a699969-0bf9-4532-8d0a-5a96e7b2b66c',
@@ -35,6 +57,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 2,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Do Mar',
+        description: '',
+      },
+      en: {
+        name: 'Seafood',
+        description: '',
+      },
+    },
   },
   {
     id: 'e93a90f9-c45b-4be8-8913-92ee6f1f1043',
@@ -47,6 +79,18 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 3,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Pratos Especiais',
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        name: 'Special Dishes',
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '810a5a09-aa59-4426-8eaf-deb47a41ac2b',
@@ -58,6 +102,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 4,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Empanadas',
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        name: 'Empanadas',
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'a25633d9-a60c-4086-859a-95c700c1c037',
@@ -70,6 +124,18 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 5,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Pratos Rápidos',
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        name: 'Quick Dishes',
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '7c308503-1316-4451-8417-a15f95e43c46',
@@ -81,6 +147,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 6,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Pizzas',
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        name: 'Pizzas',
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'cc5c6c06-d8cf-48b2-8462-278118e54dc7',
@@ -92,6 +168,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 7,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Pizzas da Baía',
+        description: '',
+      },
+      en: {
+        name: 'Bay Pizzas',
+        description: '',
+      },
+    },
   },
   {
     id: 'fc2c1376-1bc3-48f5-8386-e9a92c028f6d',
@@ -103,6 +189,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 8,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Hambúrgueres Caseiros',
+        description: '',
+      },
+      en: {
+        name: 'Homemade Burgers',
+        description: '',
+      },
+    },
   },
   {
     id: '643385b5-908e-4d60-8e42-4da44fc70a06',
@@ -114,6 +210,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 9,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Massas',
+        description: '',
+      },
+      en: {
+        name: 'Pasta',
+        description: '',
+      },
+    },
   },
   {
     id: '756e42db-2874-45ba-83a1-b73471ef282e',
@@ -125,6 +231,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 10,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Sobremesas',
+        description: '',
+      },
+      en: {
+        name: 'Desserts',
+        description: '',
+      },
+    },
   },
   {
     id: 'b453523f-16da-4530-88a4-852ffa99f286',
@@ -136,6 +252,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 11,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Bebidas',
+        description: '',
+      },
+      en: {
+        name: 'Soft Drinks',
+        description: '',
+      },
+    },
   },
   {
     id: '275f3042-36ed-4485-8f02-049e0a3ac86a',
@@ -147,6 +273,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 12,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Cervejas',
+        description: '',
+      },
+      en: {
+        name: 'Beers',
+        description: '',
+      },
+    },
   },
   {
     id: '15927ab3-d261-4714-8f43-05499935920d',
@@ -158,6 +294,16 @@ export const menuCategories: Category[] = [
     icon: '',
     sort_order: 13,
     is_active: true,
+    translations: {
+      pt: {
+        name: 'Vinhos',
+        description: '',
+      },
+      en: {
+        name: 'Wines',
+        description: '',
+      },
+    },
   },
 ]
 export const menuProducts: Product[] = [
@@ -178,8 +324,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 1000,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'bf3330ad-ad18-4cf8-8f3e-648765c08a04',
@@ -198,8 +354,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 1001,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '99de6206-d80b-4ad4-840a-7b43b4f567b4',
@@ -218,8 +384,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 1002,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'd29d628c-749c-4d3f-8bd7-ab722d9e0f46',
@@ -238,8 +414,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 1003,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '7676bf97-419d-465f-8780-232ee0406ff9',
@@ -258,8 +444,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 1004,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'b3a5ff75-7723-4621-8f3f-a20677af4fe4',
@@ -278,8 +474,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 1005,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '117821a4-976a-4584-86cd-d89afc08c983',
@@ -298,8 +504,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 1006,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '010e5add-f393-465c-8014-bd6ddc94896a',
@@ -318,8 +534,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 1007,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '35bd0424-51ad-4a54-8123-a944def35378',
@@ -338,8 +564,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 1008,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '8b9bfcc8-6135-408b-8f3f-506b522b1055',
@@ -358,8 +594,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 1009,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '91b3046a-d1b0-468c-82b3-ea6ab69ac9ce',
@@ -377,8 +623,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 1100,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'cecbc291-702d-4ff3-804f-e30ab972408b',
@@ -396,8 +650,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 1101,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '86d5c381-70ca-4f85-8ada-a32c529b3da5',
@@ -415,8 +677,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 1102,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '0558df53-1b40-4b94-8eee-6e7c9639dfbc',
@@ -434,8 +704,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 1103,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'a0cd4f24-22ae-4615-8ea2-171b5553a1c2',
@@ -453,8 +731,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 1104,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '159a796a-fbd7-4030-88ce-f47cdf5c2690',
@@ -472,8 +758,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 1105,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'bc245cd8-5255-4f7d-8436-2a60db7a8b70',
@@ -491,8 +785,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 1106,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '9ec50640-0c1f-428a-82f6-cc38138b6957',
@@ -510,8 +812,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 1107,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '6c95bb9c-cfe1-4bd6-8dae-dcaf36d8b683',
@@ -529,8 +839,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 1108,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '8c5ab318-fbe3-495a-86b4-a845072a088c',
@@ -548,8 +866,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 1200,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'f76edfb0-b9d3-4cb4-8a00-929ec5dd640e',
@@ -567,8 +893,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 1201,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '32268bce-4f70-4fed-81ac-a152b7e9e214',
@@ -586,8 +920,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 1202,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'db720eb8-3ca4-4ad8-85e2-6f5ad97929bb',
@@ -605,8 +947,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 1203,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '58b7829d-95b4-43e6-8c54-4c0cf6c36402',
@@ -624,8 +974,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 1204,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '442f5ee0-cc01-4fd8-8b11-33b9043e9909',
@@ -643,8 +1001,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 1205,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'd24492d4-cf41-4ad8-85c7-0428b187fc9b',
@@ -662,8 +1028,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 1206,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'adf7c5a5-dd23-4b55-8400-85777740759c',
@@ -681,8 +1055,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 1207,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '8e03e3ff-fb5c-441a-8706-df2e437f991c',
@@ -700,8 +1082,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 1208,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '16a3dc0d-28f6-4f42-897d-582e64d7ee7b',
@@ -719,8 +1109,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 1209,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '70909e91-4451-4b31-87f3-2c99758f045d',
@@ -739,8 +1137,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 1300,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '8cd19149-314d-4c0f-8004-fbd2b4561985',
@@ -759,8 +1167,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 1301,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'dc7c2c53-3329-413f-8ce0-0d23e6b6efc8',
@@ -779,8 +1197,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 1302,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '57b37f8f-1ea2-4649-8229-5c4d19fdbfd8',
@@ -799,8 +1227,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 1303,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '4b770c49-9c7f-49eb-8830-b020a6799612',
@@ -819,8 +1257,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 1304,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '493aa6cd-3152-42af-878a-093dab8f4ba6',
@@ -839,8 +1287,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 1305,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '0f50153a-f0ea-4c21-8599-c97241488d62',
@@ -859,8 +1317,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 1306,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '3897c3fe-5f27-4b4e-87e6-d365762074ba',
@@ -876,10 +1344,20 @@ export const menuProducts: Product[] = [
     large_price: null,
     price_label: 'Por unidad',
     is_available: true,
-    is_featured: false,
+    is_featured: true,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 200,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+        name: 'Carne',
+      },
+      en: {
+        description: 'All prices are per item.',
+        name: 'Beef',
+      },
+    },
   },
   {
     id: '827cf14e-6397-4832-83f9-b197c68a74bc',
@@ -897,8 +1375,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 201,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '9b5b5741-d4c5-4195-8359-6b30edf0c535',
@@ -916,8 +1402,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 202,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'cdbaafe6-c00c-4813-8325-1c31dd7da279',
@@ -935,8 +1429,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 203,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'fd87fb13-3886-4aa0-8e2d-826846e4bd4b',
@@ -954,8 +1456,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 204,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '794e0b2b-ee78-4490-831c-0865dc7b70f1',
@@ -973,8 +1483,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 205,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'ba5484c6-cc14-4ad1-8c42-1f453c5a1242',
@@ -992,8 +1510,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 206,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'c1034a0b-b870-4033-8f83-cad5c7fe53aa',
@@ -1011,8 +1537,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 207,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '849e743f-7314-4a65-87e4-2709caf3321a',
@@ -1030,8 +1564,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 208,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'ee54be54-dbbc-4b78-8349-50d14d017674',
@@ -1049,8 +1591,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 209,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '53f8ad08-2ac0-45a7-86a1-39200033180e',
@@ -1068,8 +1618,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 10,
+    sort_order: 210,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'ccacd5a7-bbbb-4000-8d8d-ccfa3f614ee1',
@@ -1087,8 +1645,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 11,
+    sort_order: 211,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '9f9aad3d-aa40-4640-8084-7665f3688792',
@@ -1106,8 +1672,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 12,
+    sort_order: 212,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '4050ee48-fc19-4673-89e7-4362ad141eec',
@@ -1125,8 +1699,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 13,
+    sort_order: 213,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'f87052c2-7863-4dad-84fb-93e8a3fdffa0',
@@ -1144,8 +1726,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 14,
+    sort_order: 214,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '4fd4844d-15e1-44f1-8340-a2879268f000',
@@ -1163,8 +1753,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 15,
+    sort_order: 215,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '9f1e8bad-c550-49f0-879e-7b4f9bb2325b',
@@ -1182,8 +1780,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 16,
+    sort_order: 216,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '5a82450f-8231-411d-8551-69008e51f812',
@@ -1201,8 +1807,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 17,
+    sort_order: 217,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'c25b022c-c3ae-4100-861e-2bc6de8ab74e',
@@ -1220,8 +1834,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 18,
+    sort_order: 218,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: '6ed65727-4108-4b10-8dc1-a1c5224cb094',
@@ -1239,8 +1861,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 19,
+    sort_order: 219,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todos os preços são por unidade.',
+      },
+      en: {
+        description: 'All prices are per item.',
+      },
+    },
   },
   {
     id: 'ff0e73cd-f3a6-4609-8707-7f8605caf969',
@@ -1259,8 +1889,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 1500,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'e728bf0c-9b93-46a3-8267-860e58e9f9d1',
@@ -1279,8 +1919,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 1501,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'bb2e9241-8c3e-40a7-8c4f-4832649a2ae7',
@@ -1299,8 +1949,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 1502,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'cbc06323-7b8e-4f76-8904-49de8d53e6c2',
@@ -1319,8 +1979,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 1503,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '93a4f05d-392b-45fb-87af-ff36e49aa993',
@@ -1339,8 +2009,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 1504,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '45493619-2937-4070-8b05-039a54278c3f',
@@ -1359,8 +2039,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 1505,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '574a7148-936e-4b4e-8ad5-5877f21c18bf',
@@ -1379,8 +2069,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 1506,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '5077f09b-c66c-4638-806a-5a427a44193d',
@@ -1399,8 +2099,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 1507,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '1957488c-7462-4ef5-8bf2-8921a9d2e31b',
@@ -1419,8 +2129,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 1508,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: '593a9eb7-4938-47ec-8507-29dc588e4cae',
@@ -1439,8 +2159,18 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 1509,
     product_variants: [],
+    translations: {
+      pt: {
+        description:
+          'Estes pratos podem ser acompanhados de purê, batata cozida, batatas fritas ou salada.',
+      },
+      en: {
+        description:
+          'These dishes can be served with mashed potatoes, boiled potatoes, fries or salad.',
+      },
+    },
   },
   {
     id: 'c97e7283-ecd9-4ad1-8aac-5108248c9247',
@@ -1456,10 +2186,22 @@ export const menuProducts: Product[] = [
     large_price: 19000,
     price_label: '',
     is_available: true,
-    is_featured: false,
+    is_featured: true,
     is_visible: true,
     sort_order: 0,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+        name: 'Mussarela',
+        ingredients: 'molho e mussarela.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+        name: 'Mozzarella',
+        ingredients: 'sauce and mozzarella.',
+      },
+    },
   },
   {
     id: 'cd9cbe1e-e7bf-4881-8f0f-036ce47552f7',
@@ -1479,6 +2221,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 1,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '326a16d1-8311-44f0-8691-c679826b8324',
@@ -1498,6 +2248,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 2,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'b6fb45cf-dc8e-41ed-8052-e9bd62ca4646',
@@ -1517,6 +2275,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 3,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '17284bb0-a368-48a7-8f2f-7882ab0506dc',
@@ -1536,6 +2302,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 4,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'e856c015-d8b3-4041-89e3-5a6a58278bed',
@@ -1555,6 +2329,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 5,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '0d4521ee-0d7b-4045-8aa4-b099d316370e',
@@ -1574,6 +2356,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 6,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '6818215c-1fe5-40a1-8f16-d7a03d60d538',
@@ -1593,6 +2383,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 7,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'ac55760a-2048-4cb6-8992-7371d5c3b30d',
@@ -1612,6 +2410,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 8,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '1da0052c-0f6f-4a29-8b03-638ae2a463bd',
@@ -1631,6 +2437,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 9,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '2eb9aab9-7017-46db-8d37-730c24532595',
@@ -1650,6 +2464,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 10,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '29fc9e70-e15b-4935-8eed-6a04f7fae06d',
@@ -1669,6 +2491,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 11,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'b4bd6166-4195-41cc-8248-238e1503eba5',
@@ -1688,6 +2518,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 12,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '77c8e44c-915e-4c85-8311-c3f65cd1a79a',
@@ -1707,6 +2545,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 13,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '904a9c4c-dc81-4df9-819a-315de15f92fb',
@@ -1726,6 +2572,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 14,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'c5968c53-a0ea-4843-8120-1dccd84611e9',
@@ -1745,6 +2599,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 15,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '9e833771-0a29-4979-82c0-32e07a7b11bd',
@@ -1764,6 +2626,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 16,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '945bff1f-0046-4a0c-8fdb-29e85301d43d',
@@ -1783,6 +2653,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 17,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'c7a6f8c1-b4fe-4768-83c5-e6c17ee82265',
@@ -1802,6 +2680,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 18,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'dbb1e9dc-28c4-457c-8636-6dcdfb062e25',
@@ -1821,6 +2707,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 19,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: 'e5ccaedc-78b3-4edc-8412-e269767901fd',
@@ -1840,6 +2734,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 20,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '7f9ca0f6-a8f1-4ed6-880c-cfb24a9b7834',
@@ -1859,6 +2761,14 @@ export const menuProducts: Product[] = [
     is_visible: true,
     sort_order: 21,
     product_variants: [],
+    translations: {
+      pt: {
+        description: 'Todas as pizzas levam orégano e azeitonas.',
+      },
+      en: {
+        description: 'All pizzas include oregano and olives.',
+      },
+    },
   },
   {
     id: '9e1c8967-f0e2-4342-8c1e-d14b924159df',
@@ -1876,8 +2786,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 1700,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '77586cb0-7bd3-4fa1-89c9-34f8638fe239',
@@ -1895,8 +2813,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 1701,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'df8e5f08-a1ff-49f3-809d-588d4bf7d196',
@@ -1914,8 +2840,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 1702,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e97a8ec3-8174-48ab-8f60-31a621d0800e',
@@ -1933,8 +2867,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 1703,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '3ef4172f-e505-4f09-8916-c5299bfda901',
@@ -1952,8 +2894,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 1704,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'a3b3de19-d611-4317-88a4-a372df912612',
@@ -1971,8 +2921,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 1705,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '7807652c-4a1f-473c-8ed0-4a1ad0f9fac8',
@@ -1990,8 +2948,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 100,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'c784c865-30c7-49b9-8897-adc39eb50e01',
@@ -2009,8 +2975,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 101,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'fb3adb7f-261b-496d-867b-8d6166b01659',
@@ -2028,8 +3002,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 102,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'c5724492-686e-4e32-8408-e6d463c687e3',
@@ -2047,8 +3029,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 103,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e421ac24-bcf4-49c5-8f7d-0f3e9209ee40',
@@ -2066,8 +3056,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 104,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '7942ea55-c06b-42d2-8233-a10cd4a70a21',
@@ -2085,8 +3083,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 105,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '82c6e549-1d9a-4c1f-8911-8acd367afdb7',
@@ -2104,8 +3110,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 106,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '22fa115e-cfc9-43b7-895e-ec10207b4280',
@@ -2123,8 +3137,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 107,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'a2a48b7e-c9cb-46d4-8889-c101cf719853',
@@ -2142,8 +3164,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 108,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'a28c8348-c3c0-4715-8dfb-6a4d45bfbca7',
@@ -2159,10 +3189,22 @@ export const menuProducts: Product[] = [
     large_price: null,
     price_label: '',
     is_available: true,
-    is_featured: false,
+    is_featured: true,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 109,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+        name: 'Dieguito Caseiro com Fritas',
+        ingredients: 'carne, cheddar duplo, tomate, alface, bacon, cebola, ovo e batatas fritas.',
+      },
+      en: {
+        description: '',
+        name: 'Dieguito Homemade Burger with Fries',
+        ingredients: 'beef, double cheddar, tomato, lettuce, bacon, onion, egg and fries.',
+      },
+    },
   },
   {
     id: '5fdddc9d-aac7-4a7f-8f39-25a063388605',
@@ -2180,7 +3222,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 1900,
     product_variants: [
       {
         id: '8f08b519-7776-49a3-8bcf-7cf6ac7736af',
@@ -2190,6 +3232,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '287aa8d3-daf4-4171-8af6-14bdf5c49367',
@@ -2199,6 +3242,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'ce268a9b-92ef-4ef5-8c22-2a8383a40cd2',
@@ -2208,6 +3252,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'd0fe0520-2759-491e-8d00-211117a2a3ad',
@@ -2217,6 +3262,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '0a6bebf8-27d7-4876-8d98-e9011e41bddc',
@@ -2226,6 +3272,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '18ef38aa-b183-4836-8451-d0566b9c0556',
@@ -2235,6 +3282,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '5eb85336-1b32-4fa9-8021-10bdf84a0390',
@@ -2244,6 +3292,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'a6d67937-b9a1-4b1d-8b76-ea8960f203a3',
@@ -2253,6 +3302,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '120cc58f-aa31-403a-82c1-103ee06e5990',
@@ -2262,8 +3312,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '3a7fd503-8dba-4842-878a-5bc8810b19a6',
@@ -2281,7 +3340,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 1901,
     product_variants: [
       {
         id: 'e46b5fb9-c7c2-4f93-8121-9d9330918d9f',
@@ -2291,6 +3350,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '09f048c4-40a4-473e-81bf-d44cf2cb27c3',
@@ -2300,6 +3360,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'd5e7868c-7d86-40f5-8e8d-3479346669c3',
@@ -2309,6 +3370,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'a586dfcf-0a2e-423c-84ad-2c57b128b1b6',
@@ -2318,6 +3380,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '569c7c44-1976-49bf-8f74-07f12f5a24c6',
@@ -2327,6 +3390,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'c5f8b8d3-b842-4ce5-88eb-60b898d0d4eb',
@@ -2336,6 +3400,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '3e0a7fc5-87da-44b2-8007-c340cd83399c',
@@ -2345,6 +3410,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '9c9446e7-8e62-487c-84f0-ec3ab772bd31',
@@ -2354,6 +3420,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'ffb01408-1486-4908-8fa8-0160b6ff70d2',
@@ -2363,8 +3430,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '0c1a4261-d849-4b6f-8c80-7140cc0f74af',
@@ -2382,7 +3458,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 1902,
     product_variants: [
       {
         id: 'b0f09224-7186-42fe-8449-da91349f0462',
@@ -2392,6 +3468,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '6cf8ff8f-f4ea-48b3-8f4f-72df9fa1b304',
@@ -2401,6 +3478,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '4cbc43ec-62f4-4660-8edd-a4b511bcc2e6',
@@ -2410,6 +3488,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '4728bc23-b880-455d-8d02-c28f92764715',
@@ -2419,6 +3498,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'bd102b38-fca7-4d4e-88ac-68c767983588',
@@ -2428,6 +3508,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '65512377-1e89-4823-8003-7d8c0f2cd369',
@@ -2437,6 +3518,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '710c99f4-f88c-4682-8778-24a310a71e80',
@@ -2446,6 +3528,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'a18a79f8-3cb8-40d4-8ba7-d42269123425',
@@ -2455,6 +3538,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '58f748c9-7d48-4fbe-8fce-1412d1ae3515',
@@ -2464,8 +3548,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '19471dec-c427-4bae-8d9c-3699a29feb87',
@@ -2483,7 +3576,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 1903,
     product_variants: [
       {
         id: 'a83b71bf-a665-441e-82c4-9386876fcf9a',
@@ -2493,6 +3586,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '1089b152-92e5-4738-8bcd-03e7f664c1f9',
@@ -2502,6 +3596,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '71eb268d-366d-4c49-8f76-3155f85cc07e',
@@ -2511,6 +3606,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '5fca8651-85a9-4a13-8e3f-ad980978747d',
@@ -2520,6 +3616,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'f16401f7-3532-42b4-80cb-2a28effaf80f',
@@ -2529,6 +3626,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '7138db7b-10f6-4d35-8541-9f31e8ab889f',
@@ -2538,6 +3636,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '22acd2d2-0c6c-4b1d-883e-33956969afb5',
@@ -2547,6 +3646,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '7b9588e0-0ce6-4dcd-85ed-0dd28d6b5b21',
@@ -2556,6 +3656,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '478ea0dc-a905-44bc-8561-892da6ad054b',
@@ -2565,8 +3666,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '640dcf1b-6ad0-4cd7-8b28-dd1a6d1c363d',
@@ -2584,7 +3694,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 1904,
     product_variants: [
       {
         id: '2bf639f0-7a95-4f8f-823b-e6148a02d553',
@@ -2594,6 +3704,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '91ac5883-8f5e-4eae-8c5b-a6f55032f2e0',
@@ -2603,6 +3714,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '3075d81c-c1ce-4fa5-8156-a54ee549cfc5',
@@ -2612,6 +3724,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'f843526e-b1d5-4e9c-87d7-c7ce77959cd9',
@@ -2621,6 +3734,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '88ee0bbf-92a7-416d-8ac5-2e26b5eb5e5b',
@@ -2630,6 +3744,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'b06ba24e-29fa-4712-8d7e-1d1a5c8fc09e',
@@ -2639,6 +3754,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '28bd353f-4ba0-49ed-8bcb-e29db6283cc5',
@@ -2648,6 +3764,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'cc92c8c2-4f9b-4c5e-8857-c9572cc509ad',
@@ -2657,6 +3774,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '76cbff4e-8606-46de-8de2-d052c909a95e',
@@ -2666,8 +3784,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '157a4fcc-d1cf-4a69-8dee-e5d43cd41bc5',
@@ -2685,7 +3812,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 1905,
     product_variants: [
       {
         id: '594a0dca-3de2-44fb-8924-0889004df55f',
@@ -2695,6 +3822,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'b26a5ff0-91c7-40c4-8485-4124086d88d4',
@@ -2704,6 +3832,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'd969a023-61a5-423f-88eb-1f2387591277',
@@ -2713,6 +3842,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '270fc380-eef4-4133-8ae8-05580cdbee0f',
@@ -2722,6 +3852,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '88ee3bc0-f52d-4637-811f-490fc61b4afa',
@@ -2731,6 +3862,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'c444e5a5-09ea-44e4-81a3-3bcbed472bee',
@@ -2740,6 +3872,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '5ecf0024-cc51-446d-8688-6df2770f9e31',
@@ -2749,6 +3882,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '042d9fe0-031b-429c-83d6-acbd61983b91',
@@ -2758,6 +3892,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '10714362-90c4-4d81-849d-3c18673bb720',
@@ -2767,8 +3902,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '004a702a-72e1-4de3-8505-704b5c4e25ba',
@@ -2786,7 +3930,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 1906,
     product_variants: [
       {
         id: 'cba2ba04-ce31-4901-8c74-188737b60901',
@@ -2796,6 +3940,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '785535d0-75fe-42bd-81da-e4e037907bf0',
@@ -2805,6 +3950,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'a84b9775-cf0d-4a1d-838f-4bd3b23b7b38',
@@ -2814,6 +3960,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'e81139a9-27ad-4eee-81ef-cfe7bd75385f',
@@ -2823,6 +3970,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '7e8fcb33-d492-4da6-8868-138aa2c758d8',
@@ -2832,6 +3980,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '61253976-80c4-457a-84a7-bf70d476a024',
@@ -2841,6 +3990,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'd5f38f9f-a089-4636-8ec9-e5ad0efa113a',
@@ -2850,6 +4000,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '9839f262-932f-436e-8deb-ec1ef232edcf',
@@ -2859,6 +4010,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'b6ca4b52-287c-4e25-8192-b090724b4fd5',
@@ -2868,8 +4020,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'bbc90539-12fb-4a54-8734-3e4b637561a3',
@@ -2887,7 +4048,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 1907,
     product_variants: [
       {
         id: '5ed9842f-04f8-49ec-8ccb-d8b6707e3126',
@@ -2897,6 +4058,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '1feca85e-e9ca-4b8b-86ce-403204d80d3c',
@@ -2906,6 +4068,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'be76c98c-f86f-471e-8e96-85acb7a1b659',
@@ -2915,6 +4078,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '126f4f1b-4769-4b2e-8f85-b1b0bd7177b5',
@@ -2924,6 +4088,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'ad176747-2304-467c-8ac7-e02eaef23637',
@@ -2933,6 +4098,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '52185773-fdd7-4513-86ba-454fdf333e36',
@@ -2942,6 +4108,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '6c6ac0b3-3156-4098-8c00-c5bbfda5259a',
@@ -2951,6 +4118,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '5e984832-db8f-44dc-8bf6-a0d957d6a588',
@@ -2960,6 +4128,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'ad62962f-30c1-47bc-8d79-8722f7183825',
@@ -2969,8 +4138,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '589efae1-4ff3-465d-823e-9ca0acc585f8',
@@ -2988,7 +4166,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 1908,
     product_variants: [
       {
         id: '0b473e0f-68ae-422b-83c1-32c737736a81',
@@ -2998,6 +4176,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'dc501b50-2b1f-475b-8ed8-45ca8889fba5',
@@ -3007,6 +4186,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'ac8470fe-bd8c-45af-8ea6-172b69c19709',
@@ -3016,6 +4196,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'b18a4cf8-554f-40dc-85cb-de12115b088d',
@@ -3025,6 +4206,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'df35ca23-23c6-43cd-81f1-54670a4ff4c3',
@@ -3034,6 +4216,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '722ec681-8298-4d4c-8161-42c11c226a0c',
@@ -3043,6 +4226,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '42271fea-8cd4-4f8e-828c-622f8863fd31',
@@ -3052,6 +4236,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '627fff11-8e1e-48de-8341-a13f1dabb3e5',
@@ -3061,6 +4246,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'dc8b2ac0-1dc0-455a-8597-76966498d8f6',
@@ -3070,8 +4256,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '7d284cbc-95ec-46d6-84c2-099f839f6482',
@@ -3089,7 +4284,7 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 1909,
     product_variants: [
       {
         id: 'f1de80ee-640d-4a4c-8509-49f2ecf313dd',
@@ -3099,6 +4294,7 @@ export const menuProducts: Product[] = [
         sort_order: 0,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '2ab7e94c-8d82-44b3-8899-696c63e1d7e6',
@@ -3108,6 +4304,7 @@ export const menuProducts: Product[] = [
         sort_order: 1,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '9d72bbfe-3d04-4d39-8650-5223c69827fc',
@@ -3117,6 +4314,7 @@ export const menuProducts: Product[] = [
         sort_order: 2,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: 'be9623fa-a3f4-46e0-8a79-8a1efcddf67c',
@@ -3126,6 +4324,7 @@ export const menuProducts: Product[] = [
         sort_order: 3,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '9ffc2c6b-6b6c-471e-8f1e-a7856cd4e3fd',
@@ -3135,6 +4334,7 @@ export const menuProducts: Product[] = [
         sort_order: 4,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '242bb7a9-973e-4827-882b-4852b7328bc0',
@@ -3144,6 +4344,7 @@ export const menuProducts: Product[] = [
         sort_order: 5,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '55a9e42c-7224-4b72-851b-b2eb12950020',
@@ -3153,6 +4354,7 @@ export const menuProducts: Product[] = [
         sort_order: 6,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '94520bfb-6faf-4756-825b-99e7e1801451',
@@ -3162,6 +4364,7 @@ export const menuProducts: Product[] = [
         sort_order: 7,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
       {
         id: '0df84c66-614e-4bde-84c1-1e649ff73be2',
@@ -3171,8 +4374,17 @@ export const menuProducts: Product[] = [
         sort_order: 8,
         is_available: true,
         is_addon: true,
+        translations: {},
       },
     ],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'd6732c4f-ddcc-4de8-869d-79684861459f',
@@ -3190,8 +4402,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 2000,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '9235ed64-e19f-4a10-8045-61223819a6bd',
@@ -3209,8 +4429,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 2001,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '5ef251db-4b96-4438-8245-b237e7be5fce',
@@ -3228,8 +4456,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 2002,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '6a9d3a71-f8d5-4550-8b89-592269096101',
@@ -3247,8 +4483,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 2003,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '9f61793c-d1bf-4a5e-82bd-387b35df0716',
@@ -3266,8 +4510,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 2004,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'f3e16800-8bc5-43f9-8cbf-8f69724e65e4',
@@ -3285,8 +4537,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 2005,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e71487c0-84b0-4745-86c6-08b51d02733d',
@@ -3304,8 +4564,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 2006,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e375cd12-1c65-4e54-8be4-f565a3268cb0',
@@ -3323,8 +4591,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 2007,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '20786e97-768d-4b7b-8964-6216bba24a60',
@@ -3342,8 +4618,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 2100,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '2f8631ec-a1dc-48dd-8b79-4a37732c8605',
@@ -3361,8 +4645,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 2101,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '2751eba3-5887-4736-84f0-dc9143daaa34',
@@ -3380,8 +4672,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 2102,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '0df90154-97b6-4352-88a1-70501cce98ec',
@@ -3399,8 +4699,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 2103,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'dd68d6a7-54ab-41f3-826a-39f09eef33ed',
@@ -3418,8 +4726,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 2104,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '50a970f7-aa78-4fd9-802c-c72d5f999d0b',
@@ -3437,8 +4753,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 2105,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '2c8e24fb-4d85-42b5-8d34-5513e378137b',
@@ -3456,8 +4780,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 2106,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '0c67f564-f609-41ac-8870-838e81586dd2',
@@ -3475,8 +4807,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 2200,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e75da59a-a513-4d26-8adc-8fbfb019e05b',
@@ -3494,8 +4834,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 2201,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'f0e3630f-c4bf-43e7-86f2-ea1133814316',
@@ -3513,8 +4861,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 2202,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'ae06bff5-d27b-4cd7-8613-cf02dcc213ac',
@@ -3532,8 +4888,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 2203,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '7748270c-3520-4ac8-882c-5b114dc452c0',
@@ -3551,8 +4915,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 2204,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'd1322197-c66b-4932-8822-b7a86fb3cbaa',
@@ -3570,8 +4942,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 2205,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '67cc8901-2661-4b44-85a6-70efc02b556d',
@@ -3589,8 +4969,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 2206,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '9fa926a6-46a5-4838-829d-f166f8574a54',
@@ -3608,8 +4996,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 2207,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'c88f1ff8-d3a8-483d-89f6-6f177ab7b173',
@@ -3627,8 +5023,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 2208,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '8f50f260-673f-4a58-846e-7171e5b6ce54',
@@ -3646,8 +5050,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 2209,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '398c1368-596b-45a8-88a0-eb01a1a284d1',
@@ -3665,8 +5077,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 10,
+    sort_order: 2210,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '702ee90f-27f1-4838-8102-bd97ae924431',
@@ -3684,8 +5104,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 11,
+    sort_order: 2211,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '2df79c5d-0832-4008-8ffa-8cf1354129d5',
@@ -3703,8 +5131,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 12,
+    sort_order: 2212,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '40aaea04-0131-4183-81d3-d5abcf948bd7',
@@ -3722,8 +5158,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 13,
+    sort_order: 2213,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e20cb3d8-2045-42d7-82f6-5d1809439f00',
@@ -3741,8 +5185,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 14,
+    sort_order: 2214,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '031fa78b-5ada-4035-8763-b0c5d39c8241',
@@ -3760,8 +5212,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 0,
+    sort_order: 2300,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '0b308a72-f817-4dcb-88f1-32ab32248f00',
@@ -3779,8 +5239,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 1,
+    sort_order: 2301,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '746df8b1-4c9b-4757-8748-317c8adb0497',
@@ -3798,8 +5266,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 2,
+    sort_order: 2302,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '1bffc8cb-d959-4598-8433-0e6d0d0cbe79',
@@ -3817,8 +5293,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 3,
+    sort_order: 2303,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '67138cbb-ad0f-499e-8117-b8243eb405a9',
@@ -3836,8 +5320,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 4,
+    sort_order: 2304,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '2fb96f13-4eb7-4882-82da-2adade7d0724',
@@ -3855,8 +5347,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 5,
+    sort_order: 2305,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '0e053bfd-a7b1-4b8d-8295-b9cb42ea434e',
@@ -3874,8 +5374,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 6,
+    sort_order: 2306,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '282dd1ee-4e7c-48d0-8c8f-de5bf8e2ac45',
@@ -3893,8 +5401,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 7,
+    sort_order: 2307,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'c0430bb2-69a5-4f45-8cb6-d6943d4e1991',
@@ -3912,8 +5428,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 8,
+    sort_order: 2308,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '756bbccc-238e-4cfa-8852-224801360244',
@@ -3931,8 +5455,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 9,
+    sort_order: 2309,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '14cfc349-cfdc-4b5f-8832-db52d6f15e63',
@@ -3950,8 +5482,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 10,
+    sort_order: 2310,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '4045f5cb-64da-487a-8f14-218454787b20',
@@ -3969,8 +5509,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 11,
+    sort_order: 2311,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'ef82afe8-d913-47a4-8b40-a85b7fcdbb00',
@@ -3988,8 +5536,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 12,
+    sort_order: 2312,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'a7c7c63e-ba71-45ea-8ca6-4ab96ca7e6db',
@@ -4007,8 +5563,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 13,
+    sort_order: 2313,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '3ece78e0-eee6-4360-8373-aeb7cd810233',
@@ -4026,8 +5590,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 14,
+    sort_order: 2314,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '3ce1ae40-52be-45fa-8c41-f7317e120b1f',
@@ -4045,8 +5617,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 15,
+    sort_order: 2315,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '3504d574-ba25-4380-8431-b3a29e9eb233',
@@ -4064,8 +5644,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 16,
+    sort_order: 2316,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'f0c138a4-cc7d-4208-8c43-84fb77bf1f46',
@@ -4083,8 +5671,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 17,
+    sort_order: 2317,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e6242f49-0218-4e02-8f61-1049191767c9',
@@ -4102,8 +5698,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 18,
+    sort_order: 2318,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '60bca975-75a0-42ad-8acf-b3f624acb3fe',
@@ -4121,8 +5725,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 19,
+    sort_order: 2319,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'cf1dca62-eb7d-42ed-8b59-f5ba130a7f3e',
@@ -4140,8 +5752,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 20,
+    sort_order: 2320,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'e537ff37-dca5-49f2-81e7-0bed47e9f7d0',
@@ -4159,8 +5779,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 21,
+    sort_order: 2321,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'ef6fde8b-89de-4388-8a40-897223b45ee8',
@@ -4178,8 +5806,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 22,
+    sort_order: 2322,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '0af45535-9bd4-4273-8078-ce3484160495',
@@ -4197,8 +5833,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 23,
+    sort_order: 2323,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '8fc4fcaa-d09a-480b-8c4a-800778064fa6',
@@ -4216,8 +5860,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 24,
+    sort_order: 2324,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '27e967d1-759b-490f-823d-c819ee76ae3c',
@@ -4235,8 +5887,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 25,
+    sort_order: 2325,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '8b12fb89-2374-4394-81b5-41159986283f',
@@ -4254,8 +5914,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 26,
+    sort_order: 2326,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '7c688863-70e1-4014-8dfb-800ff908bd78',
@@ -4273,8 +5941,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 27,
+    sort_order: 2327,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'aa021890-32c6-4941-8704-3fea5d6639a0',
@@ -4292,8 +5968,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 28,
+    sort_order: 2328,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '1023f637-6e87-4c26-84ec-58fec9c627a0',
@@ -4311,8 +5995,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 29,
+    sort_order: 2329,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '95b940ce-af76-416b-8eb8-ad8e2376b737',
@@ -4330,8 +6022,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 30,
+    sort_order: 2330,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '7fbc989e-9e7e-4909-8712-412c05770d69',
@@ -4349,8 +6049,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 31,
+    sort_order: 2331,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'd08f5a7c-5b84-490e-8f86-50cbe9165d5a',
@@ -4368,8 +6076,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 32,
+    sort_order: 2332,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'd3b164f8-3054-4667-8db3-9dcde9a786fa',
@@ -4387,8 +6103,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 33,
+    sort_order: 2333,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '2722b390-2a54-4275-8cd2-efa3a22d8959',
@@ -4406,8 +6130,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 34,
+    sort_order: 2334,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '08738f99-d958-410c-8c04-de18c68de153',
@@ -4425,8 +6157,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 35,
+    sort_order: 2335,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '1c1caf4f-701a-4270-89bc-55b4bf2ebaf5',
@@ -4444,8 +6184,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 36,
+    sort_order: 2336,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'b47b41be-e873-412e-82c7-d93896cc4186',
@@ -4463,8 +6211,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 37,
+    sort_order: 2337,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: 'd3d72379-459a-4112-82e3-1994c0e7bdb6',
@@ -4482,8 +6238,16 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 38,
+    sort_order: 2338,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
   {
     id: '9c2c5ee8-f609-4934-8cd8-1c78d639b865',
@@ -4501,7 +6265,15 @@ export const menuProducts: Product[] = [
     is_available: true,
     is_featured: false,
     is_visible: true,
-    sort_order: 39,
+    sort_order: 2339,
     product_variants: [],
+    translations: {
+      pt: {
+        description: '',
+      },
+      en: {
+        description: '',
+      },
+    },
   },
 ]

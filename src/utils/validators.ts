@@ -1,6 +1,7 @@
 import { z } from 'zod'
 const money = z.number().min(0, 'El precio no puede ser negativo.').max(9999999999).nullable()
 export const productSchema = z.object({
+  translations: z.record(z.string(), z.record(z.string(), z.string())).optional(),
   name: z.string().trim().min(2, 'Escribí al menos 2 letras.').max(120),
   slug: z.string().min(1),
   category_id: z.string().uuid('Elegí una categoría.'),
@@ -18,6 +19,7 @@ export const productSchema = z.object({
   sort_order: z.number().int(),
   product_variants: z.array(
     z.object({
+      translations: z.record(z.string(), z.record(z.string(), z.string())).optional(),
       id: z.string(),
       product_id: z.string(),
       name: z.string().trim().min(1, 'La variante necesita un nombre.'),
